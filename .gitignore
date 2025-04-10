@@ -10,9 +10,33 @@ venv/
 .vscode/
 .idea/
 
-# Environment variables
-.env
+# DBeaver specific files
+.dbeaver/
+*.dbeaver/
+*.dbeaver-data-sources*.xml
+dbeaver-debug.log
+project-metadata.json
+project-metadata.json.bak
+data-sources.json
+project-settings.json
 
-# OS-specific files
+# Database files
+*.duckdb
+*.duckdb.wal
+*.db
+*.sqlite
+*.sqlite3
+
+*.csv
+
+# Other large data formats
+*.parquet
+*.arrow
+
+# Configuration and environment
+.env
 .DS_Store
 Thumbs.db
+
+# Backup files
+*.bak
