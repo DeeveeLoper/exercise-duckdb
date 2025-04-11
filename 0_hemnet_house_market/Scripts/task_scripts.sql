@@ -43,7 +43,9 @@ SELECT
 	(COUNT (CASE WHEN final_price > 10000000 THEN 1 END) * 100.0 / COUNT(*)) AS percentage_above_10m
 FROM hemnet;
 
+-- k) Feel free to explore anything else you find interesting in this dataset
 
+-- Distribution of homes by number of rooms
 SELECT 
 	rooms, 
 	COUNT (*) AS count_homes,
@@ -54,7 +56,6 @@ WHERE rooms IS NOT NULL
 GROUP BY rooms
 ORDER BY rooms;
 
--- k) Feel free to explore anything else you find interesting in this dataset
 -- Compare asked price vs final price
 SELECT 
     AVG(pourcentage_difference) AS avg_percentage_diff,
